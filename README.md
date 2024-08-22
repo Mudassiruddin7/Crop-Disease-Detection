@@ -8,12 +8,12 @@ In Agriculture, leaf diseases have become a major challenge, leading to substant
 
 # _**Methodology**_
 
-# **Convolution Neural Network**
+# _**Convolution Neural Network**_
 The Concept of Deep Learning is used which uses the concept of neural networks to solve the critical tasks like human brain. For image classification task since we are classifying leaf image based on its disease so to serve that purpose we have used CNN (Convolution Neural Network) Famous for working with image data since it can detect features automatically in a fast way way because even normal images consists of lakhs of features. In this we have created model with different layers like CNN, Maxpooling, Dropout, Batch Normalization and dropout. For boosting the model accuracy we have used pretrained Alexnet Model weights for our CNN layer so training for those layer have been freezed and rest layers were trained in the training process.
 
 ![CNN](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQB_sCzm_vvaKj2q1bB1t3UjziNU41iGucGA&s)
 
-# **Crop Disease Prediction**
+# _**Crop Disease Prediction**_
 Image acquisition, where real-time leaf images are captured using a camera and set against a white background to enhance visibility and facilitate precise segmentation, considering the wide range of leaf colors. In the image pre-processing phase, high-resolution images are resized to lower resolutions using interpolation techniques, and batch normalization is applied to standardize the data for more effective analysis. During feature extraction and selection, Convolutional Neural Networks (CNNs) are employed to distill essential features from the images into compact vectors, with Max Pooling and dropout layers used to manage large images and improve processing speed. The model training stage involves developing and fine-tuning the deep learning model by configuring its layers and hyperparameters to prepare it for accurate image classification. For image classification, the trained CNN model is used to categorize images based on defined patterns and features, such as texture and density, to identify crop diseases. Finally, a basic web app is created using Flask to present the model’s functionality and deployed on Heroku. The deployment integrates with GitHub using Git LFS to handle large files and enables continuous integration to keep the app updated. The model is specifically trained for certain crops and can diagnose only those crops.
 
 ![CDP](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLOEW3Ha_w2usUy3rVQ-gEHyNEV5HxEdC9vQ&s)
